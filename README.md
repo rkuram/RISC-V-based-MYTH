@@ -7,7 +7,7 @@ This repository is a summary of 5-day workshop on RISC-V based MYTH (Microproces
 ## Day 1: Introduction to RISC-V ISA and GNU compiler toolchain
 Day-1 satrts with a brief introduction of RISC-V ISA and bsaic keywords used in teh architecture. We look into how the ISA helps the applications on the computer communicate with the hardware. In ISA flow, the app code (high level language) is converted to instructions based .exe file using a compiler which in turn is converted to binary using an assembler. The compiled instructions are based on the architecture type the hardware is based on and it is an implementation of RTL using hardware Descriptive Language (HDL).
 
-(*insert picture*)
+![ISA_flow](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Images/Day1_1.PNG)
 
 Different instructions in RISC-V ISA in this workshop are mainly categorized into:
 - **Pseudo Instructions** - mv, ret
@@ -21,7 +21,7 @@ We then look into Integer number representation, where we learn how to convert a
 
 ### Lab:
 In ths lab wee look into how to compile a c program in a RISC-V based compiler.
-we write a simple c-program to add n numbers namedsum1ton.c
+we write a simple c-program to add n numbers named **sum1ton.c**
 ```
 #include <stdio.h>
 
@@ -60,11 +60,11 @@ To run the process to a certain byte address in the debugger, we use
 ```
 : until pc 0 108b0
 ```
-the number 108b0 is the byte address, which we use in one of the MCQ.
+The number 108b0 is the byte address, which we use in one of the MCQ.
 
--Results from sum1ton.c
+- **Results from sum1ton.c**
 
-(*insert pictures*)
+![Lab1](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Images/lab_answers.PNG)
 
 Later in this lab, we write a c-program to calculate the highest and lowest numbers represented by long long int.
 The data types and the format specifier are given in the table below
@@ -75,7 +75,7 @@ The data types and the format specifier are given in the table below
 | `unsigned long long int` | 8 | %llu |
 | `long long int` | 8 | %lld |
 
-signedHighest.c
+**signedHighest.c**
 ```
 #include <stdio.h>
 #include <math.h>
@@ -88,4 +88,4 @@ int main(){
   return 0;
 }
 ```
--Results from signedHighest.c
+- **Results from signedHighest.c**

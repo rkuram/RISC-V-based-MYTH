@@ -64,7 +64,11 @@ The number 108b0 is the byte address, which we use in one of the MCQ.
 
 - **Results from sum1ton.c**
 
-![Lab1](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Images/lab_answers.PNG)
+![Day1_1](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Images/instr_printf_O1.PNG)
+
+![Day1_2](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Images/instr_main_Ofast.PNG)
+
+![Day1_3](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Images/lab_answers.PNG)
 
 Later in this lab, we write a c-program to calculate the highest and lowest numbers represented by long long int.
 The data types and the format specifier are given in the table below
@@ -89,3 +93,5 @@ int main(){
 }
 ```
 - **Results from signedHighest.c**
+
+![Day1_4](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Images/lab_answer_2.PNG)

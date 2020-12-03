@@ -65,7 +65,8 @@ a0 is the register and 0 is the core.
 
 ![Day1_3](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Images/lab_answers.PNG)
 
-Later in this lab, we write a c-program to calculate the highest and lowest numbers represented by long long int.
+Later in this lab, we write a c-program to calculate the highest and lowest numbers represented by long long int in [**signedHighest.c**](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Source/signedHighest.c)
+
 The data types and the format specifier are given in the table below
 | Data Tyes | Memory (bytes) | Format Specifier |
 | :---      |      :---:     |       :---:      |
@@ -73,8 +74,6 @@ The data types and the format specifier are given in the table below
 | `int` | 4 | %d |
 | `unsigned long long int` | 8 | %llu |
 | `long long int` | 8 | %lld |
-
-**signedHighest.c**
 
 - **Results from signedHighest.c**
 

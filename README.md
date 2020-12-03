@@ -21,7 +21,7 @@ We then look into Integer number representation, where we learn how to convert a
 
 ### Lab:
 In ths lab wee look into how to compile a c program in a RISC-V based compiler.
-we write a simple c-program to add n numbers named [**sum1ton.c*"](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Source/sum1ton.c)
+we write a simple c-program to add n numbers named [**sum1ton.c**](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Source/sum1ton.c)
 We then compile the above program using a RISC-V GNU compiler by typing the following commands.
 ```
 riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c

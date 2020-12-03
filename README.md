@@ -22,6 +22,7 @@ We then look into Integer number representation, where we learn how to convert a
 ### Lab:
 In ths lab wee look into how to compile a c program in a RISC-V based compiler.
 we write a simple c-program to add n numbers named [**sum1ton.c**](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Source/sum1ton.c)
+
 We then compile the above program using a RISC-V GNU compiler by typing the following commands.
 ```
 riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
@@ -48,7 +49,13 @@ To run the process to a certain byte address in the debugger, we use
 ```
 : until pc 0 108b0
 ```
-The number 108b0 is the byte address, which we use in one of the MCQ.
+The number 108b0 is the byte address and 0 is the core, which we use in one of the MCQ.
+
+To look at the value of a register, we use
+```
+: reg 0 a0
+```
+a0 is the register and 0 is the core.
 
 - **Results from sum1ton.c**
 
@@ -68,18 +75,7 @@ The data types and the format specifier are given in the table below
 | `long long int` | 8 | %lld |
 
 **signedHighest.c**
-```
-#include <stdio.h>
-#include <math.h>
 
-int main(){
-  long long int max = (long long int) (pow(2,63)-1);
-  long long int max = (long long int) (pow(2,63)*-1);
-  printf("highest number represented by long long int is %lld\n", max);
-  printf("lowest number represented by long long int is %lld\n", max);
-  return 0;
-}
-```
 - **Results from signedHighest.c**
 
 ![Day1_4](https://github.com/rkuram/RISC-V-based-MYTH/blob/main/Images/lab_answer_2.PNG)
